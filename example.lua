@@ -10,10 +10,10 @@
 local REPO = "https://raw.githubusercontent.com/cuckcoding/GameSenseLib/main/GameSenseLib.lua"
 local Library = loadstring(game:HttpGet(REPO))()
 
-local Window = Library:CreateWindow({ Title = "gamesense", Accent = Color3.fromRGB(166, 226, 46) })
+local Window = Library:CreateWindow({ Title = "gamesense", Accent = Color3.fromRGB(114, 132, 255) })
 
 --============================ RAGE TAB ============================
-local Rage = Window:AddTab("Rage", "R")
+local Rage = Window:AddTab("Rage", "crosshair")
 
 local Aim = Rage:AddSection("Aimbot", "Left")
 Aim:AddToggle({ Text = "Enabled", Flag = "aim_enabled", Default = true })
@@ -41,7 +41,7 @@ Other:AddDropdown({ Text = "Accuracy boost", Flag = "acc_boost", Options = { "Of
 Other:AddToggle({ Text = "Standalone recoil compensation", Flag = "standalone_rcs" })
 
 --============================ VISUALS TAB ============================
-local Visuals = Window:AddTab("Visuals", "V")
+local Visuals = Window:AddTab("Visuals", "eye")
 local ESP = Visuals:AddSection("Player ESP", "Left")
 ESP:AddToggle({ Text = "Enabled", Flag = "esp_enabled", Default = true })
 ESP:AddToggle({ Text = "Box", Flag = "esp_box", Default = true })
@@ -59,7 +59,7 @@ World:AddColorPicker({ Text = "Skybox tint", Flag = "world_sky", Default = Color
 World:AddKeybind({ Text = "Zoom key", Flag = "world_zoom", Default = "C" })
 
 --============================ MISC TAB ============================
-local Misc = Window:AddTab("Misc", "M")
+local Misc = Window:AddTab("Misc", "wrench")
 local Movement = Misc:AddSection("Movement", "Left")
 Movement:AddToggle({ Text = "Bunny hop", Flag = "misc_bhop" })
 Movement:AddSlider({ Text = "Walk speed", Flag = "misc_ws", Min = 16, Max = 100, Default = 16 })

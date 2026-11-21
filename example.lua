@@ -69,7 +69,7 @@ end })
 Movement:AddTextbox({ Text = "Nickname", Flag = "misc_nick", Placeholder = "player" })
 
 local Menu = Misc:AddSection("Menu", "Right")
-Menu:AddColorPicker({ Text = "Accent color", Flag = "menu_accent", Default = Color3.fromRGB(166, 226, 46),
+Menu:AddColorPicker({ Text = "Accent color", Flag = "menu_accent", Default = Color3.fromRGB(114, 132, 255),
 	Callback = function(c) Library:SetAccent(c) end })
 Menu:AddButton({ Text = "Unload menu", Callback = function() Library:Unload() end })
 
